@@ -1,0 +1,17 @@
+{
+  "name": "StreetLarpers.HUD.Sandbox",
+  "rootNamespace": "StreetLarpers.HUD.Sandbox",
+  "references": [
+    "StreetLarpers.HUD",
+    "Unity.InputSystem"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

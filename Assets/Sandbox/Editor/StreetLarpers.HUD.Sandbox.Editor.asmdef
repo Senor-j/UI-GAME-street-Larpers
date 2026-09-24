@@ -1,0 +1,20 @@
+{
+  "name": "StreetLarpers.HUD.Sandbox.Editor",
+  "rootNamespace": "StreetLarpers.HUD.Sandbox.Editor",
+  "references": [
+    "StreetLarpers.HUD",
+    "StreetLarpers.HUD.Sandbox",
+    "UnityEngine.UI"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
