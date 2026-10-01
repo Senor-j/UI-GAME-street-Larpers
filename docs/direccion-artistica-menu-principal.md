@@ -413,7 +413,7 @@ Debe ser sutil, con la progresión *primero coincidencia, luego patrón*:
 
 ## Estado de implementación
 
-El código de este documento vive en `Assets/StreetLarpersInstituto/` (ver su `README.md`):
+El código de este documento vive en `Assets/SemestreFinal/` (ver su `README.md`):
 
 - [x] `InstitutoClock` (11:29, fecha, pulso del timbre) y `FrozenClock`.
 - [x] `FluorescentFlicker` con los modos A–E y la emisión sincronizada con la luz.

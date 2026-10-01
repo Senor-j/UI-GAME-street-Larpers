@@ -1,4 +1,4 @@
-# StreetLarpersInstituto — menú principal y sistema visual
+# SemestreFinal — menú principal y sistema visual
 
 Implementación de `docs/direccion-artistica-menu-principal.md` para **Unity 6 (6000.0.x) + URP**.
 
@@ -12,10 +12,10 @@ Implementación de `docs/direccion-artistica-menu-principal.md` para **Unity 6 (
 
 ## Cómo probarlo
 
-1. Copiar `Assets/StreetLarpersInstituto/` (con sus `.meta`) al proyecto.
-2. `Street Larpers ▸ Instituto ▸ Apply Render Settings`: Render Scale 0,6 + Nearest-Neighbor en todos los URP Assets.
+1. Copiar `Assets/SemestreFinal/` (con sus `.meta`) al proyecto.
+2. `Semestre Final ▸ Apply Render Settings`: Render Scale 0,6 + Nearest-Neighbor en todos los URP Assets.
 3. Añadir a mano al *Universal Renderer*: **Screen Space Ambient Occlusion** y **Decal** (la consola indica los valores si faltan).
-4. `Street Larpers ▸ Instituto ▸ Build Main Menu Scene` → genera `Scenes/MainMenu.unity`, materiales, `VP_Instituto_Base` y `LS_Instituto`.
+4. `Semestre Final ▸ Build Main Menu Scene` → genera `Scenes/MainMenu.unity`, materiales, `VP_Instituto_Base` y `LS_Instituto`.
 5. Opcional: `Window ▸ Rendering ▸ Lighting ▸ Generate Lighting` (lightmaps de las luces estables).
 6. Play.
 

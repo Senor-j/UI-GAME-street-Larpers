@@ -1,7 +1,7 @@
 // Material del Aro Horario (y de cualquier glifo de interacción).
 // Unlit, transparente, a doble cara y con color por vértice.
 // Regla de dirección artística: NO emite luz en la escena (color < 1, así que el bloom no lo realza).
-Shader "StreetLarpers/Glifo"
+Shader "SemestreFinal/Glifo"
 {
     Properties
     {

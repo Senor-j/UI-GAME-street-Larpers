@@ -1,6 +1,6 @@
 {
-  "name": "StreetLarpers.Instituto",
-  "rootNamespace": "StreetLarpers.Instituto",
+  "name": "SemestreFinal",
+  "rootNamespace": "SemestreFinal",
   "references": [
     "Unity.TextMeshPro",
     "Unity.InputSystem"

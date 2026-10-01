@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace StreetLarpers.Instituto.Menu
+namespace SemestreFinal.Menu
 {
     /// <summary>
     /// "Cabeza" del jugador en el menú: cámara a la altura de los ojos que gira o da unos pasos

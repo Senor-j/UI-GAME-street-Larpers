@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace StreetLarpers.Instituto.Editor
+namespace SemestreFinal.Editor
 {
     internal static class InstitutoEditorUtils
     {

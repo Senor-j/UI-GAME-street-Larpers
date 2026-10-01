@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace StreetLarpers.Instituto.Editor
+namespace SemestreFinal.Editor
 {
     /// <summary>
     /// Materiales del instituto (sección H): todos URP/Lit, colores desaturados y smoothness por reglas.
@@ -11,7 +11,7 @@ namespace StreetLarpers.Instituto.Editor
     /// </summary>
     internal static class InstitutoPalette
     {
-        public const string Folder = "Assets/StreetLarpersInstituto/Art/Materials";
+        public const string Folder = "Assets/SemestreFinal/Art/Materials";
 
         private static readonly Dictionary<string, Material> Cache = new Dictionary<string, Material>();
 
@@ -69,10 +69,10 @@ namespace StreetLarpers.Instituto.Editor
                 var material = AssetDatabase.LoadAssetAtPath<Material>(path);
                 if (material != null) return material;
 
-                var shader = Shader.Find("StreetLarpers/Glifo");
+                var shader = Shader.Find("SemestreFinal/Glifo");
                 if (shader == null)
                 {
-                    Debug.LogError("[Instituto] No se encuentra el shader 'StreetLarpers/Glifo'.");
+                    Debug.LogError("[Instituto] No se encuentra el shader 'SemestreFinal/Glifo'.");
                     return null;
                 }
                 material = new Material(shader);

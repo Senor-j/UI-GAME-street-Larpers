@@ -1,13 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using StreetLarpers.Instituto.Audio;
-using StreetLarpers.Instituto.Interaction;
-using StreetLarpers.Instituto.Lighting;
+using SemestreFinal.Audio;
+using SemestreFinal.Interaction;
+using SemestreFinal.Lighting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace StreetLarpers.Instituto.Menu
+namespace SemestreFinal.Menu
 {
     /// <summary>
     /// Navegación del menú diegético: teclado, mando y ratón. Mueve el Aro Horario entre opciones,

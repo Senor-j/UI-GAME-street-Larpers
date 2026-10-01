@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace StreetLarpers.Instituto.Core
+namespace SemestreFinal.Core
 {
     /// <summary>
     /// Reloj (analógico y/o digital) que siempre marca <see cref="InstitutoClock.FrozenTimeText"/>.

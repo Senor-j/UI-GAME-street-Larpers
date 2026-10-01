@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using StreetLarpers.Instituto.Audio;
-using StreetLarpers.Instituto.Core;
+using SemestreFinal.Audio;
+using SemestreFinal.Core;
 using UnityEngine;
 
-namespace StreetLarpers.Instituto.Interaction
+namespace SemestreFinal.Interaction
 {
     /// <summary>
     /// El glifo de interacción del juego: 12 marcas de esfera de reloj con el hueco del "11"
@@ -95,7 +95,7 @@ namespace StreetLarpers.Instituto.Interaction
             meshRenderer.receiveShadows = false;
             if (meshRenderer.sharedMaterial == null)
             {
-                var shader = Shader.Find("StreetLarpers/Glifo");
+                var shader = Shader.Find("SemestreFinal/Glifo");
                 if (shader != null) meshRenderer.sharedMaterial = new Material(shader);
             }
 

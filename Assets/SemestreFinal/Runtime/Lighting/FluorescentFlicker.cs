@@ -1,7 +1,7 @@
-using StreetLarpers.Instituto.Core;
+using SemestreFinal.Core;
 using UnityEngine;
 
-namespace StreetLarpers.Instituto.Lighting
+namespace SemestreFinal.Lighting
 {
     /// <summary>
     /// Un fluorescente: controla la intensidad de sus <see cref="Light"/> y, a la vez, la emisión del tubo,

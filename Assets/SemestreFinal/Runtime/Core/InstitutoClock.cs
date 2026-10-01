@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace StreetLarpers.Instituto.Core
+namespace SemestreFinal.Core
 {
     /// <summary>
     /// "El instituto está atrapado en el mismo momento": única fuente de verdad de la hora congelada

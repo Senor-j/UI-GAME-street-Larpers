@@ -4,3 +4,4 @@ Juego de lacetania de chills, con los Femboys
 ## Documentación
 
 - [Dirección artística y menú principal](docs/direccion-artistica-menu-principal.md)
+- [Guía desde cero: probar el menú en Unity](docs/guia-desde-cero.md)

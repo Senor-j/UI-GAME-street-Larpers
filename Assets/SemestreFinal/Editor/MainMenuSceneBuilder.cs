@@ -1,22 +1,22 @@
 using System.Linq;
-using StreetLarpers.Instituto.Core;
-using StreetLarpers.Instituto.Interaction;
-using StreetLarpers.Instituto.Lighting;
-using StreetLarpers.Instituto.Menu;
+using SemestreFinal.Core;
+using SemestreFinal.Interaction;
+using SemestreFinal.Lighting;
+using SemestreFinal.Menu;
 using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
-using static StreetLarpers.Instituto.Editor.InstitutoEditorUtils;
-using Pal = StreetLarpers.Instituto.Editor.InstitutoPalette;
+using static SemestreFinal.Editor.InstitutoEditorUtils;
+using Pal = SemestreFinal.Editor.InstitutoPalette;
 
-namespace StreetLarpers.Instituto.Editor
+namespace SemestreFinal.Editor
 {
     /// <summary>
     /// Genera el blockout jugable del menú principal a partir de la foto de referencia (sala común del semisótano).
-    /// Menú: Street Larpers ▸ Instituto ▸ Build Main Menu Scene.
+    /// Menú: Semestre Final ▸ Build Main Menu Scene.
     /// </summary>
     /// <remarks>
     /// Todo son primitivas para validar composición, luz y menú antes de modelar. Los modelos finales
@@ -25,7 +25,7 @@ namespace StreetLarpers.Instituto.Editor
     /// </remarks>
     public static class MainMenuSceneBuilder
     {
-        private const string Root = "Assets/StreetLarpersInstituto";
+        private const string Root = "Assets/SemestreFinal";
         private const string SceneFolder = Root + "/Scenes";
         private const string ScenePath = SceneFolder + "/MainMenu.unity";
         private const string SettingsFolder = Root + "/Settings";
@@ -47,7 +47,7 @@ namespace StreetLarpers.Instituto.Editor
         private static readonly Color InkBlue = Hex("#24345C");
         private static readonly Color Cartulina = Hex("#A3687A");
 
-        [MenuItem("Street Larpers/Instituto/Build Main Menu Scene")]
+        [MenuItem("Semestre Final/Build Main Menu Scene")]
         public static void Build()
         {
             if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
@@ -79,7 +79,7 @@ namespace StreetLarpers.Instituto.Editor
             AssetDatabase.SaveAssets();
 
             Debug.Log($"[Instituto] Escena generada en {ScenePath}.\n" +
-                      "Siguientes pasos: 1) Street Larpers ▸ Instituto ▸ Apply Render Settings. " +
+                      "Siguientes pasos: 1) Semestre Final ▸ Apply Render Settings. " +
                       "2) Añadir 'Screen Space Ambient Occlusion' y 'Decal' al Universal Renderer. " +
                       "3) Window ▸ Rendering ▸ Lighting ▸ Generate Lighting. 4) Play.");
         }

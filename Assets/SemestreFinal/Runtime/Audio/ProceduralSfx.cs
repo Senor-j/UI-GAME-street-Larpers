@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace StreetLarpers.Instituto.Audio
+namespace SemestreFinal.Audio
 {
     /// <summary>
     /// Sonidos provisionales generados por código para poder probar el menú sin assets de audio.

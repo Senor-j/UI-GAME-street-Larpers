@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace StreetLarpers.Instituto.Menu
+namespace SemestreFinal.Menu
 {
     /// <summary>
     /// Una opción del menú construida por capas físicas independientes (sección 7 del documento):

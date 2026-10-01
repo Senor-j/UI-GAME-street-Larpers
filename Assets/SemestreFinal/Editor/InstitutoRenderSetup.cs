@@ -3,11 +3,11 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-namespace StreetLarpers.Instituto.Editor
+namespace SemestreFinal.Editor
 {
     /// <summary>
     /// Ajustes globales de URP que forman parte de la "receta visual" (sección I del documento).
-    /// Menú: Street Larpers ▸ Instituto ▸ Apply Render Settings.
+    /// Menú: Semestre Final ▸ Apply Render Settings.
     /// </summary>
     /// <remarks>
     /// Se aplica a TODOS los URP Assets del proyecto (uno por nivel de calidad en la plantilla de Unity 6).
@@ -18,7 +18,7 @@ namespace StreetLarpers.Instituto.Editor
     {
         public const float RenderScale = 0.6f;
 
-        [MenuItem("Street Larpers/Instituto/Apply Render Settings")]
+        [MenuItem("Semestre Final/Apply Render Settings")]
         public static void Apply()
         {
             if (!EditorUtility.DisplayDialog("Ajustes de render del instituto",
