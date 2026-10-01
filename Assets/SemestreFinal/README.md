@@ -12,6 +12,9 @@ Implementación de `docs/direccion-artistica-menu-principal.md` para **Unity 6 (
 
 ## Cómo probarlo
 
+Guía detallada paso a paso, desde crear el proyecto: `docs/guia-desde-cero.md`.
+
+
 1. Copiar `Assets/SemestreFinal/` (con sus `.meta`) al proyecto.
 2. `Semestre Final ▸ Apply Render Settings`: Render Scale 0,6 + Nearest-Neighbor en todos los URP Assets.
 3. Añadir a mano al *Universal Renderer*: **Screen Space Ambient Occlusion** y **Decal** (la consola indica los valores si faltan).
