@@ -411,6 +411,19 @@ Debe ser sutil, con la progresión *primero coincidencia, luego patrón*:
 
 ---
 
+## Estado de implementación
+
+El código de este documento vive en `Assets/StreetLarpersInstituto/` (ver su `README.md`):
+
+- [x] `InstitutoClock` (11:29, fecha, pulso del timbre) y `FrozenClock`.
+- [x] `FluorescentFlicker` con los modos A–E y la emisión sincronizada con la luz.
+- [x] `AroHorario` con sus estados (Hidden, Latent, Focused, Hold, Locked, Danger), el tic y la forma estadio/círculo.
+- [x] `MenuOption` por capas, `MenuController` (teclado, mando y ratón) y `MenuCameraRig`.
+- [x] Builder de la escena del menú a partir de la foto, materiales, Volume Profile y Lighting Settings.
+- [ ] Submenús reales: lobby en el proyector, ajustes en la pizarra y lista de clase.
+- [ ] Adaptador de gameplay `IInteractable` → `AroHorario` en screen-space.
+- [ ] Sonidos grabados (tic de reloj, chincheta) y la fuente tipográfica definitiva.
+
 ## Próximos pasos sugeridos
 
 1. Blockout de la sala en ProBuilder, con la cámara a 1,65 m en el umbral.

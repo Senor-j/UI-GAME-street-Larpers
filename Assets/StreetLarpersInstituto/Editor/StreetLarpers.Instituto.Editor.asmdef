@@ -1,0 +1,21 @@
+{
+  "name": "StreetLarpers.Instituto.Editor",
+  "rootNamespace": "StreetLarpers.Instituto.Editor",
+  "references": [
+    "StreetLarpers.Instituto",
+    "Unity.TextMeshPro",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.RenderPipelines.Universal.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
