@@ -35,10 +35,10 @@ namespace SemestreFinal.Interaction
 
         [Header("Forma (metros)")]
         [SerializeField, Min(0f)] private float padding = 0.025f;
-        [SerializeField, Min(0.001f)] private float tickLength = 0.022f;
-        [SerializeField, Min(0.001f)] private float tickWidth = 0.006f;
-        [SerializeField, Min(0.001f)] private float needleLength = 0.05f;
-        [SerializeField, Min(0.001f)] private float needleWidth = 0.007f;
+        [SerializeField, Min(0.001f)] private float tickLength = 0.03f;
+        [SerializeField, Min(0.001f)] private float tickWidth = 0.008f;
+        [SerializeField, Min(0.001f)] private float needleLength = 0.06f;
+        [SerializeField, Min(0.001f)] private float needleWidth = 0.009f;
         [Tooltip("Variación fija de longitud de cada marca: aspecto de plantilla + rotulador.")]
         [SerializeField, Range(0f, 0.5f)] private float handDrawnJitter = 0.15f;
         [SerializeField] private int jitterSeed = 1129;

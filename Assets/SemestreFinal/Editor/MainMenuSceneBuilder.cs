@@ -39,9 +39,12 @@ namespace SemestreFinal.Editor
         private const float ClassroomDepth = 4f;
 
         // --- Jugador y tablón ---
-        private static readonly Vector3 HomePosition = new Vector3(-1.0f, 1.65f, 0.2f);
-        private static readonly Vector3 HomeEuler = new Vector3(4f, -22f, 0f);
+        // Validado con la previsualización: más cerca del tablón para que los folios se lean con Render Scale 0,6.
+        private static readonly Vector3 HomePosition = new Vector3(-1.2f, 1.62f, 0.9f);
+        private static readonly Vector3 HomeEuler = new Vector3(3f, -27f, 0f);
         private static readonly Vector3 TablonPosition = new Vector3(MinX + 0.04f, 1.45f, 2.4f);
+
+        private static readonly Vector3 WhiteboardPosition = new Vector3(4.6f, 0f, 5.6f);
 
         private static readonly Color Ink = Hex("#1A1A1C");
         private static readonly Color InkBlue = Hex("#24345C");
@@ -274,8 +277,8 @@ namespace SemestreFinal.Editor
             Box("Papelera_Azul", parent, new Vector3(MinX + 0.25f, 0.35f, 4.3f), new Vector3(0.36f, 0.7f, 0.36f), Pal.PapeleraAzul);
             Box("Papelera_Amarilla", parent, new Vector3(MinX + 0.25f, 0.3f, 4.75f), new Vector3(0.34f, 0.6f, 0.34f), Pal.PapeleraAmarilla);
 
-            // Pizarra blanca con ruedas (destino de AJUSTES).
-            Whiteboard(parent, new Vector3(1.0f, 0f, 6.6f), 20f);
+            // Pizarra blanca con ruedas (destino de AJUSTES). Fuera de la línea de visión hacia la cristalera.
+            Whiteboard(parent, WhiteboardPosition, 39f);
 
             // Radiador y cajas de cartón (pared derecha; se ven al girar).
             for (int i = 0; i < 14; i++)
@@ -452,7 +455,8 @@ namespace SemestreFinal.Editor
             var destinations = new GameObject("Destinos_Camara").transform;
             var glassTarget = new Vector3((WindowMinX + WindowMaxX) * 0.5f, 1.5f, MaxZ + ClassroomDepth * 0.6f);
             var toClassroom = Destination("Destino_Aula", destinations, new Vector3(-0.4f, 1.65f, 3.2f), glassTarget);
-            var toWhiteboard = Destination("Destino_Pizarra", destinations, new Vector3(0.2f, 1.62f, 4.9f), new Vector3(1.0f, 1.35f, 6.6f));
+            var toWhiteboard = Destination("Destino_Pizarra", destinations, new Vector3(3.0f, 1.62f, 3.6f),
+                WhiteboardPosition + new Vector3(0f, 1.35f, 0f));
             var toCredits = Destination("Destino_ListaClase", destinations, new Vector3(-1.45f, 1.6f, 1.9f),
                 tablon.TransformPoint(new Vector3(0.32f, 0.2f, 0f)));
             var toExit = Destination("Destino_Salida", destinations, HomePosition, new Vector3(6.5f, 2.3f, MaxZ));
